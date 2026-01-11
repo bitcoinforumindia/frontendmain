@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import FadeIn from "./ui/FadeIn";
 
 const Hero = () => {
+    const [tilt, setTilt] = useState({ x: 0, y: 0 });
+
+    const handleMouseMove = (e) => {
+        const card = e.currentTarget;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        // Calculate rotation (max 15 degrees)
+        const rotateX = ((y - centerY) / centerY) * -15;
+        const rotateY = ((x - centerX) / centerX) * 15;
+
+        setTilt({ x: rotateX, y: rotateY });
+    };
+
+    const handleMouseLeave = () => {
+        setTilt({ x: 0, y: 0 });
+    };
+
     const handleWinFreeTickets = () => {
         // Get referral code from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
@@ -19,27 +40,11 @@ const Hero = () => {
 
     return (
 
-        <section className="relative w-full min-h-[85vh] flex flex-col justify-center px-4 sm:px-8 lg:px-24 overflow-hidden pt-24 md:pt-28 pb-12">
+        <section className="relative w-full min-h-[85vh] flex flex-col justify-end px-4 sm:px-8 lg:px-24 overflow-hidden pt-32 lg:pt-72 pb-16">
 
-
-
-
-
-            <div className="z-10 w-full max-w-7xl flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-12">
-
-
-
-                {/* Image Section (Left) */}
-                <FadeIn direction="up" delay={100} className="relative w-[65%] sm:w-[50%] lg:w-[35%] lg:max-w-[500px] lg:opacity-80 pointer-events-none perspective-1000 p-0 m-0 mt-8 lg:mt-32">
-                    <img
-                        src="/assets/imgs/logo/wib.svg"
-                        alt="Bitcoin Forum India"
-                        className="w-full animate-float-fast transition-transform duration-100 ease-out opacity-80 lg:opacity-100"
-                    />
-                </FadeIn>
-
-                {/* Content Section (Right) */}
-                <div className="flex flex-col items-center lg:items-start w-full lg:w-[60%] lg:pl-12 mt-8 lg:mt-32">
+            <div className="z-10 w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-12">
+                {/* Content Section - Left Side */}
+                <div className="flex flex-col items-center lg:items-start w-full lg:w-[55%]">
                     <FadeIn direction="up" delay={400} duration={800} className="w-full">
                         <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 font-light leading-relaxed text-center lg:text-left">
                             India's premier Bitcoin gathering is coming to Hyderabad. <br />
@@ -63,9 +68,26 @@ const Hero = () => {
                         </a>
                     </FadeIn>
                 </div>
+
+                {/* Bitcoin Image - Right Side (Refined size and 3D Tilt Position) */}
+                <FadeIn direction="up" delay={200} className="relative w-[65%] sm:w-[55%] lg:w-[45%] lg:max-w-[450px] lg:-mt-20 perspective-1000">
+                    <div
+                        onMouseMove={handleMouseMove}
+                        onMouseLeave={handleMouseLeave}
+                        style={{
+                            transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+                            transition: 'transform 0.1s ease-out'
+                        }}
+                        className="w-full h-auto cursor-pointer pointer-events-auto"
+                    >
+                        <img
+                            src="/assets/imgs/logo/bitcoin.svg"
+                            alt="Bitcoin"
+                            className="w-full h-auto drop-shadow-[0_0_30px_rgba(255,101,1,0.3)] animate-float-fast pointer-events-none"
+                        />
+                    </div>
+                </FadeIn>
             </div>
-
-
 
         </section>
     );

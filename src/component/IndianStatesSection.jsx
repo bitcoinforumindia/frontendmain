@@ -74,11 +74,11 @@ const IndianStatesSection = () => {
         </div>
 
         {/* RIGHT COLUMN: The Map (Adjusted Size) */}
-        <div className="w-full lg:w-[55%] relative">
-          <FadeIn direction="left" delay={200} duration={1000}>
-            <div className="relative aspect-square w-full">
+        <div className="w-full lg:w-[55%] relative z-20">
+          <FadeIn direction="left" delay={200} duration={1000} className="relative z-20">
+            <div className="relative aspect-square w-full pointer-events-auto">
               <IndiaMapSvg
-                className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(255,101,1,0.15)] scale-105 lg:scale-110 origin-center translate-x-12 lg:translate-x-24"
+                className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(255,101,1,0.15)] scale-105 lg:scale-110 origin-center translate-x-12 lg:translate-x-24 relative z-20"
               />
               {/* Dynamic Back Glow */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-gradient-to-tr from-[#ff6501]/10 to-transparent rounded-full blur-[80px] -z-10"></div>
@@ -87,7 +87,7 @@ const IndianStatesSection = () => {
         </div>
 
       </div>
-    </div>
+    </div >
   );
 };
 

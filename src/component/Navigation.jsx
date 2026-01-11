@@ -75,14 +75,12 @@ const Navigation = () => {
               : 'py-3 md:py-5 bg-white backdrop-blur-md'
             } rounded-2xl w-full mx-auto`}
         >
-          <BorderBeam size={300} duration={12} delay={9} borderWidth={3} colorFrom="#ff6501" colorTo="#ff6501" />
-
           <div className="px-6 md:px-10 flex items-center justify-between relative z-10 w-full">
             {/* Logo - Left (visible on all screens) */}
             <div className="flex-shrink-0">
               <Link to="/">
                 <img
-                  src="/headerlogo.png"
+                  src="/assets/imgs/logo/wib.svg"
                   alt="Bitcoin India Forum"
                   className="h-10 md:h-14 lg:h-16 w-auto transition-all duration-300 hover:scale-105"
                 />

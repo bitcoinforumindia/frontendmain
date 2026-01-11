@@ -26,8 +26,8 @@ export const BorderBeam = ({
         return () => resizeObserver.disconnect();
     }, []);
 
-    // Use 24px radius for smoother curves (rounded-2xl visual appearance)
-    const rx = 24;
+    // Use 16px radius to exactly match rounded-2xl (Tailwind's rounded-2xl = 16px)
+    const rx = 16;
     const { width: w, height: h } = dimensions;
 
     // Path: Top-Left -> Clockwise (Rounded Rectangle)

@@ -158,9 +158,6 @@ const TicketTiersSection = () => {
                     </div>
                     <div className="text-black font-bold font-mono">${tier.price}</div>
                   </div>
-                  {isActive && (
-                    <div className="w-2 h-2 rounded-full bg-[#ff6501] shadow-[0_0_10px_#ff6501] animate-pulse"></div>
-                  )}
                 </div>
               </button>
             )

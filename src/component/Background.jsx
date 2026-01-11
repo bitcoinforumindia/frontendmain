@@ -1,16 +1,12 @@
 import React from 'react';
 import BackgroundRippleEffect from './ui/BackgroundRippleEffect';
 import FloatingParticles from './FloatingParticles';
-import AnimatedGradientWaves from './AnimatedGradientWaves';
 
 const Background = () => {
     return (
         <>
             {/* Non-interactive background elements at z-[-1] - BEHIND everything */}
             <div className="fixed inset-0 z-[-1] overflow-hidden bg-[#ffffff] pointer-events-none">
-                {/* Animated Gradient Waves - Orange tint */}
-                <AnimatedGradientWaves />
-
                 {/* Floating Particles - White bubbles */}
                 <FloatingParticles />
 

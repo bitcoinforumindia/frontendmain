@@ -37,6 +37,15 @@ A high-performance, visually stunning landing page for the "Bitcoin India" confe
 - **FAQ**: Accordion-style questions.
 - **Sponsors**: Auto-scrolling marquee.
 
+## Recent Changes (Session History - Jan 11 2026)
+- **Visual & Functional Fixes**:
+    - **Reverted Headings**: Changed section headings ("Secure Your Spot", "World Class Voices", etc.) back to **centered** alignment as per user preference.
+    - **Indian Map Interactivity Fix**:
+        - **Issue**: Map hover glow was blocked by the background grid (z-10).
+        - **Solution**:
+            - Applied `z-20` to the Map container (placing it just above the background).
+            - **CRITICAL**: Added `pointer-events-auto` to the Map container. This ensures the map explicitly captures mouse events instead of letting them fall through to the background, even if visually layered correctly. This replicates the successful pattern used in the Hero section.
+
 ## Recent Changes (Session History - Jan 9 2026)
 - **Visual Overhaul (White Theme)**:
     - Transformed site from Dark Mode (`bg-black`) to Light Mode (`bg-white`).
