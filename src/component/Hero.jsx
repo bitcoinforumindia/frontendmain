@@ -53,7 +53,7 @@ const Hero = () => {
                             </span> GATHERING
                         </h1>
                         <p className="text-gray-300 text-lg sm:text-xl lg:text-2xl font-light leading-relaxed text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-                            Coming to Hyderabad. Join <span className="text-[#FF9900] font-bold">50,000+</span> attendees, <span className="text-[#FF9900] font-bold">150+</span> speakers, and industry leaders for a historic event.
+                            Here in Hyderabad. Join <span className="text-[#FF9900] font-bold">50,000+</span> attendees, <span className="text-[#FF9900] font-bold">150+</span> speakers, and industry leaders for a historic event.
                         </p>
                     </FadeIn>
 
