@@ -66,7 +66,18 @@ const Navigation = () => {
 
   return (
     <>
-      <div className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 ease-out ${isScrolled ? 'w-[92%] md:w-[85%] lg:w-[75%]' : 'w-[95%] md:w-[90%] lg:w-[85%]'}`}>
+      {/* Mobile Logo - Top Left Standalone */}
+      <div className="md:hidden fixed top-6 left-6 z-50">
+        <Link to="/">
+          <img
+            src="/assets/imgs/logo/wib.svg"
+            alt="Bitcoin India Forum"
+            className={`w-auto transition-all duration-300 ${isScrolled ? 'h-12' : 'h-16'}`}
+          />
+        </Link>
+      </div>
+
+      <div className={`fixed top-6 z-50 transition-all duration-500 ease-out right-4 left-auto translate-x-0 md:left-1/2 md:right-auto md:-translate-x-1/2 ${isScrolled ? 'w-auto md:w-[85%] lg:w-[75%]' : 'w-auto md:w-[90%] lg:w-[85%]'}`}>
         {/* Main Header Pill - Contains Logo, Nav, and Button */}
         <header
           className={`transition-all duration-500 ease-out border border-[#ff6501]/50
@@ -75,9 +86,9 @@ const Navigation = () => {
               : 'py-3 md:py-5 bg-[#0A0A0A]/60 backdrop-blur-md'
             } rounded-2xl w-full mx-auto`}
         >
-          <div className="px-6 md:px-10 flex items-center justify-between relative z-10 w-full">
-            {/* Logo - Left (visible on all screens) */}
-            <div className="flex-shrink-0">
+          <div className="px-4 md:px-10 flex items-center justify-between gap-4 relative z-10 w-full">
+            {/* Logo - Left (visible only on Desktop now) */}
+            <div className="flex-shrink-0 hidden md:block">
               <Link to="/">
                 <img
                   src="/assets/imgs/logo/wib.svg"

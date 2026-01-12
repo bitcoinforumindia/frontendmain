@@ -22,6 +22,7 @@ main {
 /* Re-enable pointer events for all interactive elements */
 main a,
 main button,
+main img,
 main input,
 main textarea,
 main select,
@@ -39,7 +40,7 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Outfit', sans-serif;
   letter-spacing: -0.02em;
 }
 

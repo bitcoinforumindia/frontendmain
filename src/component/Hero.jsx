@@ -44,7 +44,7 @@ const Hero = () => {
 
             <div className="z-10 w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-16">
                 {/* Content Section - Left Side */}
-                <div className="flex flex-col items-center lg:items-start w-full lg:w-[60%] relative z-20 pointer-events-auto">
+                <div className="flex flex-col items-center lg:items-start w-full lg:w-[60%] relative z-20">
                     <FadeIn direction="up" delay={400} duration={800} className="w-full">
                         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black mb-6 leading-[0.9] tracking-tighter text-center lg:text-left font-heading text-white">
                             INDIA'S PREMIER <br />

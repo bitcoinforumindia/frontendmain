@@ -429,7 +429,7 @@ const ApplySpeaker = () => {
               <Button
                 type="submit"
                 label={isSubmitting ? "Submitting Application..." : "Submit Application"}
-                className="w-full py-4 text-lg font-semibold !bg-transparent !border-2 !border-[#ff6501] !text-[#ff6501] shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:!bg-[#ff6501]/10 hover:!shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300"
+                className="w-full py-4 text-lg font-semibold !bg-none !bg-transparent !border-2 !border-[#ff6501] !text-[#ff6501] shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:!bg-[#ff6501]/10 hover:!shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300"
                 disabled={isSubmitting}
               />
             </div>

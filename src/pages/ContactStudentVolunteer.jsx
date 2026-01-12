@@ -131,7 +131,7 @@ const ContactStudentVolunteer = () => {
             <label className="block mb-1 text-sm text-gray-300">Message <span className="text-[#ff6501]" aria-hidden>*</span></label>
             <textarea required aria-required="true" className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg" placeholder="How can you help? What can you offer? What is your goal?" rows={6} name="message" value={formData.message} onChange={onChange} />
           </div>
-          <Button type="submit" label={loading ? 'Submitting...' : 'Submit'} className="w-full py-3 text-lg !bg-transparent !border-2 !border-[#ff6501] !text-[#ff6501] shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:!bg-[#ff6501]/10 hover:!shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300" disabled={loading} />
+          <Button type="submit" label={loading ? 'Submitting...' : 'Submit'} className="w-full py-3 text-lg !bg-none !bg-transparent !border-2 !border-[#ff6501] !text-[#ff6501] shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:!bg-[#ff6501]/10 hover:!shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300" disabled={loading} />
           {status === 'validation' && <p className="text-yellow-400">{statusMessage}</p>}
           {status === 'ok' && <p className="text-green-400">✅ Thank you for contacting us. We will reach out to you as soon as possible.</p>}
           {status === 'err' && <p className="text-red-400">Submission failed. Try again.</p>}
