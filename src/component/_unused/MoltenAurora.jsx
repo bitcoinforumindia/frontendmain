@@ -11,7 +11,7 @@ const MoltenAurora = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#0A0A0A] to-[#0d0d0d]" />
 
             {/* Subtle radial gradient overlay for depth */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(255,101,1,0.15),transparent_50%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(0,102,255,0.15),transparent_50%)]" />
 
             {/* Top vignette */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_100%_at_50%_0%,transparent_0%,rgba(5,5,5,0.8)_70%)]" />
@@ -22,7 +22,7 @@ const MoltenAurora = () => {
                 style={{
                     top: '-20%',
                     left: '-10%',
-                    background: 'radial-gradient(circle, rgba(255,101,1,0.25) 0%, rgba(255,101,1,0.1) 40%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(0,102,255,0.25) 0%, rgba(0,102,255,0.1) 40%, transparent 70%)',
                     filter: 'blur(80px)',
                 }}
             />
@@ -33,7 +33,7 @@ const MoltenAurora = () => {
                 style={{
                     top: '10%',
                     right: '-15%',
-                    background: 'radial-gradient(circle, rgba(247,147,26,0.2) 0%, rgba(247,147,26,0.08) 40%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(0,102,255,0.2) 0%, rgba(0,102,255,0.08) 40%, transparent 70%)',
                     filter: 'blur(100px)',
                 }}
             />
@@ -44,7 +44,7 @@ const MoltenAurora = () => {
                 style={{
                     bottom: '-10%',
                     left: '20%',
-                    background: 'radial-gradient(circle, rgba(204,82,0,0.18) 0%, rgba(204,82,0,0.05) 50%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(0,82,204,0.18) 0%, rgba(0,82,204,0.05) 50%, transparent 70%)',
                     filter: 'blur(90px)',
                 }}
             />
@@ -55,7 +55,7 @@ const MoltenAurora = () => {
                 style={{
                     top: '40%',
                     right: '10%',
-                    background: 'radial-gradient(circle, rgba(255,150,50,0.12) 0%, transparent 60%)',
+                    background: 'radial-gradient(circle, rgba(0,120,255,0.12) 0%, transparent 60%)',
                     filter: 'blur(70px)',
                 }}
             />
@@ -64,7 +64,7 @@ const MoltenAurora = () => {
             <div
                 className="absolute w-full h-[80vh] top-0 left-0"
                 style={{
-                    background: 'radial-gradient(ellipse 60% 40% at 50% 20%, rgba(255,101,1,0.08) 0%, transparent 60%)',
+                    background: 'radial-gradient(ellipse 60% 40% at 50% 20%, rgba(0,102,255,0.08) 0%, transparent 60%)',
                 }}
             />
 
@@ -83,3 +83,7 @@ const MoltenAurora = () => {
 };
 
 export default MoltenAurora;
+
+
+
+

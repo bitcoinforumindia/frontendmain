@@ -265,3 +265,7 @@ const Shader = ({ source, uniforms, maxFps = 60 }) => {
 };
 
 export default CanvasRevealEffect;
+
+
+
+

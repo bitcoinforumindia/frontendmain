@@ -9,7 +9,7 @@ const BitcoinRevealBackground = () => {
 
     useEffect(() => {
         const handleGlobalMouseMove = (e) => {
-            if (!isHovering) setIsHovering(true);
+            if (char === '₿') ctx.shadowColor = '#FF9900';
             mouseX.set(e.clientX);
             mouseY.set(e.clientY);
         };
@@ -53,8 +53,8 @@ const BitcoinRevealBackground = () => {
                     animationSpeed={5}
                     containerClassName="bg-[#fff]"
                     colors={[
-                        [255, 101, 1], // Bitcoin Orange
-                        [247, 147, 26] // Traditional Bitcoin Gold
+                        [0, 102, 255], // Blue
+                        [0, 120, 255] // Lighter Blue
                     ]}
                     opacities={[0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1]}
                     dotSize={3} // Increased size
@@ -69,3 +69,7 @@ const BitcoinRevealBackground = () => {
 };
 
 export default BitcoinRevealBackground;
+
+
+
+

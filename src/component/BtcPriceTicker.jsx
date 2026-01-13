@@ -244,7 +244,7 @@ const BtcPriceTicker = () => {
           {/* Price Display with Auto Animation */}
           <div className="flex flex-col items-center gap-1">
             <span className="text-white text-[10px] sm:text-xs font-bold">
-              <span className="text-[#ff6501]">BTC</span><span className="!text-white">/</span><span className="!text-white">{showInr ? 'INR' : 'USD'}</span>
+              <span className="text-[#FF9900]">BTC</span><span className="!text-white">/</span><span className="!text-white">{showInr ? 'INR' : 'USD'}</span>
             </span>
 
             {btcData.loading ? (
@@ -252,13 +252,13 @@ const BtcPriceTicker = () => {
             ) : (
               <div className="relative w-48 sm:w-64 flex justify-center">
                 {/* USD Price */}
-                <span className={`text-[#ff6501] font-bold text-2xl sm:text-3xl transition-all duration-500 transform ${showInr ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
+                <span className={`text-[#FF9900] font-bold text-2xl sm:text-3xl transition-all duration-500 transform ${showInr ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
                   }`}>
                   {formatPrice(btcData.price, 'USD')}
                 </span>
 
                 {/* INR Price */}
-                <span className={`absolute top-0 left-0 w-full text-center text-[#ff6501] font-bold text-2xl sm:text-3xl transition-all duration-500 transform ${showInr ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+                <span className={`absolute top-0 left-0 w-full text-center text-[#FF9900] font-bold text-2xl sm:text-3xl transition-all duration-500 transform ${showInr ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
                   }`}>
                   {formatPrice(getInrPrice(), 'INR')}
                 </span>
@@ -292,7 +292,7 @@ const BtcPriceTicker = () => {
           {/* Price Display with Auto Animation */}
           <div className="flex flex-col items-center gap-1 -ml-6">
             <span className="text-white text-sm font-bold">
-              <span className="text-[#ff6501]">BTC</span><span className="!text-white">/</span><span className="!text-white">{showInr ? 'INR' : 'USD'}</span>
+              <span className="text-[#FF9900]">BTC</span><span className="!text-white">/</span><span className="!text-white">{showInr ? 'INR' : 'USD'}</span>
             </span>
 
             {btcData.loading ? (
@@ -300,13 +300,13 @@ const BtcPriceTicker = () => {
             ) : (
               <div className="relative w-40 flex justify-center">
                 {/* USD Price */}
-                <span className={`text-[#ff6501] font-bold text-2xl transition-all duration-500 transform ${showInr ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
+                <span className={`text-[#FF9900] font-bold text-2xl transition-all duration-500 transform ${showInr ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
                   }`}>
                   {formatPrice(btcData.price, 'USD')}
                 </span>
 
                 {/* INR Price */}
-                <span className={`absolute top-0 left-0 w-full text-center text-[#ff6501] font-bold text-2xl transition-all duration-500 transform ${showInr ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+                <span className={`absolute top-0 left-0 w-full text-center text-[#FF9900] font-bold text-2xl transition-all duration-500 transform ${showInr ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
                   }`}>
                   {formatPrice(getInrPrice(), 'INR')}
                 </span>
@@ -320,3 +320,7 @@ const BtcPriceTicker = () => {
 };
 
 export default BtcPriceTicker;
+
+
+
+

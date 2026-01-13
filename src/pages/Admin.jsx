@@ -188,7 +188,7 @@ const Admin = () => {
         <div className="max-w-md w-full bg-[#1F1F1F] border border-[#2a2a2a] rounded-2xl p-6 sm:p-8 text-white text-center">
           <h1 className="metric-value mb-2">Access denied</h1>
           <p className="mb-6">You must be an admin and signed in to view this page.</p>
-          <a href="/admin/login" className="text-[#ff6501] hover:underline">Go to Admin Login</a>
+          <a href="/admin/login" className="text-[#FF9900] hover:underline">Go to Admin Login</a>
         </div>
       </section>
     );
@@ -218,7 +218,7 @@ const Admin = () => {
               <button
                 onClick={() => setActiveTab('contact')}
                 className={`px-3 py-2 rounded-lg border text-sm ${activeTab === 'contact'
-                    ? 'border-[#ff6501] bg-[#ff6501]/10 text-[#ff6501]'
+                    ? 'border-[#FF9900] bg-[#FF9900]/10 text-[#FF9900]'
                     : 'border-[#585858] text-[#FFFFFF80] hover:bg-[#2a2a2a]'
                   }`}
               >
@@ -229,7 +229,7 @@ const Admin = () => {
               <button
                 onClick={() => setActiveTab('speakers')}
                 className={`px-3 py-2 rounded-lg border text-sm ${activeTab === 'speakers'
-                    ? 'border-[#ff6501] bg-[#ff6501]/10 text-[#ff6501]'
+                    ? 'border-[#FF9900] bg-[#FF9900]/10 text-[#FF9900]'
                     : 'border-[#585858] text-[#FFFFFF80] hover:bg-[#2a2a2a]'
                   }`}
               >
@@ -240,7 +240,7 @@ const Admin = () => {
               <button
                 onClick={() => setActiveTab('students')}
                 className={`px-3 py-2 rounded-lg border text-sm ${activeTab === 'students'
-                    ? 'border-[#ff6501] bg-[#ff6501]/10 text-[#ff6501]'
+                    ? 'border-[#FF9900] bg-[#FF9900]/10 text-[#FF9900]'
                     : 'border-[#585858] text-[#FFFFFF80] hover:bg-[#2a2a2a]'
                   }`}
               >
@@ -251,7 +251,7 @@ const Admin = () => {
               <button
                 onClick={() => setActiveTab('media')}
                 className={`px-3 py-2 rounded-lg border text-sm ${activeTab === 'media'
-                    ? 'border-[#ff6501] bg-[#ff6501]/10 text-[#ff6501]'
+                    ? 'border-[#FF9900] bg-[#FF9900]/10 text-[#FF9900]'
                     : 'border-[#585858] text-[#FFFFFF80] hover:bg-[#2a2a2a]'
                   }`}
               >
@@ -299,12 +299,12 @@ const Admin = () => {
                   </div>
 
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Subject:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Subject:</h4>
                     <p className="text-white text-sm sm:text-base break-words">{r.subject}</p>
                   </div>
 
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Message:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Message:</h4>
                     <p className="text-white whitespace-pre-wrap text-sm sm:text-base break-words">{r.message}</p>
                   </div>
 
@@ -349,33 +349,33 @@ const Admin = () => {
                   </div>
 
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Topic Title:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Topic Title:</h4>
                     <p className="text-white font-medium text-sm sm:text-base break-words">{r.topic_title}</p>
                   </div>
 
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Topic Abstract:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Topic Abstract:</h4>
                     <p className="text-white whitespace-pre-wrap text-sm sm:text-base break-words">{r.topic_abstract}</p>
                   </div>
 
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Bio:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Bio:</h4>
                     <p className="text-white whitespace-pre-wrap text-sm sm:text-base break-words">{r.bio}</p>
                   </div>
 
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Experience:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Experience:</h4>
                     <p className="text-white whitespace-pre-wrap text-sm sm:text-base break-words">{r.experience}</p>
                   </div>
 
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Target Audience:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Target Audience:</h4>
                     <p className="text-white whitespace-pre-wrap text-sm sm:text-base break-words">{r.audience}</p>
                   </div>
 
                   {r.previous_speaking && (
                     <div className="mb-3">
-                      <h4 className="text-[#ff6501] font-medium mb-1 text-sm sm:text-base">Previous Speaking:</h4>
+                      <h4 className="text-[#FF9900] font-medium mb-1 text-sm sm:text-base">Previous Speaking:</h4>
                       <p className="text-white whitespace-pre-wrap text-sm sm:text-base break-words">{r.previous_speaking}</p>
                     </div>
                   )}
@@ -438,19 +438,19 @@ const Admin = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
                     {r.role_interest && (
                       <div>
-                        <h4 className="text-[#ff6501] font-medium mb-1">Role Interest:</h4>
+                        <h4 className="text-[#FF9900] font-medium mb-1">Role Interest:</h4>
                         <p className="text-white">{r.role_interest}</p>
                       </div>
                     )}
                     {r.availability && (
                       <div>
-                        <h4 className="text-[#ff6501] font-medium mb-1">Availability:</h4>
+                        <h4 className="text-[#FF9900] font-medium mb-1">Availability:</h4>
                         <p className="text-white">{r.availability}</p>
                       </div>
                     )}
                   </div>
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1">Message:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1">Message:</h4>
                     <p className="text-white whitespace-pre-wrap">{r.message}</p>
                   </div>
                   <button onClick={() => toggleStatus(r.id, r.status || 'pending')} className={`px-3 py-2 rounded border text-sm ${(r.status || 'pending') === 'pending' ? 'border-green-600 text-green-400' : 'border-yellow-600 text-yellow-400'
@@ -487,19 +487,19 @@ const Admin = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
                     {r.partnership_type && (
                       <div>
-                        <h4 className="text-[#ff6501] font-medium mb-1">Type:</h4>
+                        <h4 className="text-[#FF9900] font-medium mb-1">Type:</h4>
                         <p className="text-white">{r.partnership_type}</p>
                       </div>
                     )}
                     {r.phone && (
                       <div>
-                        <h4 className="text-[#ff6501] font-medium mb-1">Phone:</h4>
+                        <h4 className="text-[#FF9900] font-medium mb-1">Phone:</h4>
                         <p className="text-white">{r.phone}</p>
                       </div>
                     )}
                   </div>
                   <div className="mb-3">
-                    <h4 className="text-[#ff6501] font-medium mb-1">Message:</h4>
+                    <h4 className="text-[#FF9900] font-medium mb-1">Message:</h4>
                     <p className="text-white whitespace-pre-wrap">{r.message}</p>
                   </div>
                   <button onClick={() => toggleStatus(r.id, r.status || 'pending')} className={`px-3 py-2 rounded border text-sm ${(r.status || 'pending') === 'pending' ? 'border-green-600 text-green-400' : 'border-yellow-600 text-yellow-400'
@@ -517,5 +517,9 @@ const Admin = () => {
 };
 
 export default Admin;
+
+
+
+
 
 

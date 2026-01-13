@@ -132,7 +132,7 @@ const Contact = () => {
         <div className="mb-6">
           <Link
             to="/"
-            className="inline-flex items-center text-[#ff6501] hover:text-[#ff6501] transition-colors group"
+            className="inline-flex items-center text-[#FF9900] hover:text-[#FF9900] transition-colors group"
           >
             <svg className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -143,16 +143,16 @@ const Contact = () => {
 
         <div className="text-center mb-16 relative">
           {/* Background decoration */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#ff6501]/20 blur-[80px] rounded-full pointer-events-none"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#FF9900]/20 blur-[80px] rounded-full pointer-events-none"></div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tighter uppercase relative z-10">
-            Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6501] to-[#ff6501]">Us</span>
+            Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF9900] to-[#FF9900]">Us</span>
           </h1>
 
-          <div className="flex items-center justify-center gap-4 text-[#ff6501]/80 mb-4">
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+          <div className="flex items-center justify-center gap-4 text-[#FF9900]/80 mb-4">
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
             <span className="text-sm font-mono tracking-[0.3em] uppercase">Get In Touch</span>
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
           </div>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-8">
@@ -161,29 +161,29 @@ const Contact = () => {
 
           {/* Unified cards: email first, then CTA */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-            <div className="bg-black border-2 border-[#585858] rounded-xl p-6 flex flex-col min-h-[260px] hover:border-[#ff6501] transition-all duration-500">
-              <h3 className="text-xl md:text-2xl font-bold text-[#ff6501] mb-2">General Queries</h3>
+            <div className="bg-black border-2 border-[#585858] rounded-xl p-6 flex flex-col min-h-[260px] hover:border-[#FF9900] transition-all duration-500">
+              <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-[#FF9900] transition-colors">General Inquiries</h2>
               <div className="metric-label mb-4">
-                Reach us directly at <a href="mailto:contact@btcindia.media" className="text-[#ff6501] hover:underline">contact@btcindia.media</a>
+                Reach us directly at <a href="mailto:contact@btcindia.media" className="text-[#FF9900] hover:underline">contact@btcindia.media</a>
               </div>
               <p className="metric-label mb-4">Ask us anything about the conference.</p>
-              <button onClick={() => window.location.href = '/contact/general'} className="w-full bg-transparent border-2 border-[#ff6501] text-[#ff6501] font-semibold py-2 rounded-md mt-auto shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:bg-[#ff6501]/10 hover:shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300">Fill the form</button>
+              <button onClick={() => window.location.href = '/contact/general'} className="w-full bg-transparent border-2 border-[#FF9900] text-[#FF9900] font-semibold py-2 rounded-md mt-auto shadow-[0_0_10px_rgba(255,153,0,0.3)] hover:bg-[#FF9900]/10 hover:shadow-[0_0_20px_rgba(255,153,0,0.6)] transition-all duration-300">Fill the form</button>
             </div>
-            <div className="bg-black border-2 border-[#585858] rounded-xl p-6 flex flex-col min-h-[260px] hover:border-[#ff6501] transition-all duration-500">
-              <h3 className="text-xl md:text-2xl font-bold text-[#ff6501] mb-2">Speaker Applications</h3>
+            <div className="bg-black border-2 border-[#585858] rounded-xl p-6 flex flex-col min-h-[260px] hover:border-[#FF9900] transition-all duration-500">
+              <h3 className="text-xl md:text-2xl font-bold text-[#FF9900] mb-2">Speaker Applications</h3>
               <div className="metric-label mb-4">
-                Reach us directly at <a href="mailto:speakers@btcindia.media" className="text-[#ff6501] hover:underline">speakers@btcindia.media</a>
+                Reach us directly at <a href="mailto:speakers@btcindia.media" className="text-[#FF9900] hover:underline">speakers@btcindia.media</a>
               </div>
               <p className="metric-label mb-4">Apply to speak at the conference and share your expertise.</p>
-              <button onClick={() => window.location.href = '/apply/speaker'} className="w-full bg-transparent border-2 border-[#ff6501] text-[#ff6501] font-semibold py-2 rounded-md mt-auto shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:bg-[#ff6501]/10 hover:shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300">Apply to Speak</button>
+              <button onClick={() => window.location.href = '/apply/speaker'} className="w-full bg-transparent border-2 border-[#FF9900] text-[#FF9900] font-semibold py-2 rounded-md mt-auto shadow-[0_0_10px_rgba(255,153,0,0.3)] hover:bg-[#FF9900]/10 hover:shadow-[0_0_20px_rgba(255,153,0,0.6)] transition-all duration-300">Apply to Speak</button>
             </div>
-            <div className="bg-black border-2 border-[#585858] rounded-xl p-6 flex flex-col min-h-[260px] hover:border-[#ff6501] transition-all duration-500">
-              <h3 className="text-xl md:text-2xl font-bold text-[#ff6501] mb-2">Sponsor Inquiries</h3>
+            <div className="bg-black border-2 border-[#585858] rounded-xl p-6 flex flex-col min-h-[260px] hover:border-[#FF9900] transition-all duration-500">
+              <h3 className="text-xl md:text-2xl font-bold text-[#FF9900] mb-2">Sponsor Inquiries</h3>
               <div className="metric-label mb-4">
-                Reach us directly at <a href="mailto:sponsors@btcindia.media" className="text-[#ff6501] hover:underline">sponsors@btcindia.media</a>
+                Reach us directly at <a href="mailto:sponsors@btcindia.media" className="text-[#FF9900] hover:underline">sponsors@btcindia.media</a>
               </div>
               <p className="metric-label mb-4">Partner with us and reach the Bitcoin community.</p>
-              <button onClick={() => window.location.href = '/apply/sponsor'} className="w-full bg-transparent border-2 border-[#ff6501] text-[#ff6501] font-semibold py-2 rounded-lg mt-auto shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:bg-[#ff6501]/10 hover:shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300">Become a Sponsor</button>
+              <button onClick={() => window.location.href = '/apply/sponsor'} className="w-full bg-transparent border-2 border-[#FF9900] text-[#FF9900] font-semibold py-2 rounded-lg mt-auto shadow-[0_0_10px_rgba(255,153,0,0.3)] hover:bg-[#FF9900]/10 hover:shadow-[0_0_20px_rgba(255,153,0,0.6)] transition-all duration-300">Become a Sponsor</button>
             </div>
           </div>
         </div>
@@ -193,5 +193,9 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
 
 

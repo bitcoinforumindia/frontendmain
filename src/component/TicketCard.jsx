@@ -10,7 +10,7 @@ const TicketCard = ({ tier, index, isPopular, className = "" }) => {
         {/* Popular Badge */}
         {isPopular && (
           <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-            <span className="bg-[#ff6501] text-black px-4 py-1 rounded-full text-sm font-semibold">
+            <span className="bg-[#FF9900] text-black px-4 py-1 rounded-full text-sm font-semibold">
               Most Valuable
             </span>
           </div>
@@ -27,7 +27,7 @@ const TicketCard = ({ tier, index, isPopular, className = "" }) => {
             />
           )}
           <h4 className="text-xl md:text-2xl font-bold text-white mb-2">{tier.title}</h4>
-          <div className="text-3xl md:text-4xl font-bold text-[#ff6501] mb-2">
+          <div className="text-3xl md:text-4xl font-bold text-[#FF9900] mb-2">
             ${tier.price}
             <span className="text-base md:text-lg text-gray-400 ml-1">{tier.currency}</span>
           </div>
@@ -38,7 +38,7 @@ const TicketCard = ({ tier, index, isPopular, className = "" }) => {
             <li key={featureIndex} className="flex items-start text-gray-300">
               <svg
                 className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0"
-                fill="#ff6501"
+                fill="#FF9900"
                 viewBox="0 0 20 20"
                 style={{ minWidth: '20px', minHeight: '20px' }}
               >
@@ -53,7 +53,7 @@ const TicketCard = ({ tier, index, isPopular, className = "" }) => {
           <Button
             label="Coming Soon"
             variant="secondary"
-            className="w-full py-2 md:py-3 text-sm md:text-lg font-semibold cursor-not-allowed mt-auto !border-[#ff6501] !border-2 !bg-[#ff6501] !text-black opacity-100 shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:!bg-[#ff6501] hover:!shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300"
+            className="w-full py-2 md:py-3 text-sm md:text-lg font-semibold cursor-not-allowed mt-auto !border-[#FF9900] !border-2 !bg-[#FF9900] !text-black opacity-100 shadow-[0_0_10px_rgba(255,153,0,0.3)] hover:!bg-[#FF9900] hover:!shadow-[0_0_20px_rgba(255,153,0,0.6)] transition-all duration-300"
             disabled={true}
           />
         </div>
@@ -63,3 +63,7 @@ const TicketCard = ({ tier, index, isPopular, className = "" }) => {
 };
 
 export default TicketCard;
+
+
+
+

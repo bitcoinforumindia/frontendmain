@@ -4,8 +4,8 @@ export const BorderBeam = ({
     className,
     duration = 15,
     borderWidth = 3,
-    colorFrom = "#ff6501",
-    colorTo = "#ff6501",
+    colorFrom = "#FF9900",
+    colorTo = "#FF9900",
     delay = 0,
 }) => {
     const containerRef = useRef(null);
@@ -118,3 +118,7 @@ export const BorderBeam = ({
 };
 
 export default BorderBeam;
+
+
+
+

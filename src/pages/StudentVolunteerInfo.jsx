@@ -9,7 +9,7 @@ const StudentVolunteerInfo = () => {
         <div className="mb-6">
           <Link
             to="/"
-            className="inline-flex items-center text-[#ff6501] hover:text-[#ff6501] transition-colors group"
+            className="inline-flex items-center text-[#FF9900] hover:text-[#FF9900] transition-colors group"
           >
             <svg className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -20,16 +20,16 @@ const StudentVolunteerInfo = () => {
 
         <div className="text-center mb-16 relative">
           {/* Background decoration */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#ff6501]/20 blur-[80px] rounded-full pointer-events-none"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#FF9900]/20 blur-[80px] rounded-full pointer-events-none"></div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tighter uppercase relative z-10">
-            Student / <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6501] to-[#ff6501]">Volunteer</span>
+            Student / <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF9900] to-[#FF9900]">Volunteer</span>
           </h1>
 
-          <div className="flex items-center justify-center gap-4 text-[#ff6501]/80 mb-4">
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+          <div className="flex items-center justify-center gap-4 text-[#FF9900]/80 mb-4">
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
             <span className="text-sm font-mono tracking-[0.3em] uppercase">Join The Team</span>
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
           </div>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
@@ -38,23 +38,23 @@ const StudentVolunteerInfo = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-          <div className="bg-black border-2 border-[#585858] rounded-xl p-6 hover:border-[#ff6501] transition-all duration-500">
-            <div className="text-xl md:text-2xl font-bold text-[#ff6501] mb-2">Free Pass</div>
+          <div className="bg-black border-2 border-[#585858] rounded-xl p-6 hover:border-[#FF9900] transition-all duration-500">
+            <div className="text-xl md:text-2xl font-bold text-[#FF9900] mb-2">Free Pass</div>
             <p className="metric-label">Get complimentary access to the conference for your shift days.</p>
           </div>
-          <div className="bg-black border-2 border-[#585858] rounded-xl p-6 hover:border-[#ff6501] transition-all duration-500">
-            <div className="text-xl md:text-2xl font-bold text-[#ff6501] mb-2">Networking</div>
+          <div className="bg-black border-2 border-[#585858] rounded-xl p-6 hover:border-[#FF9900] transition-all duration-500">
+            <div className="text-xl md:text-2xl font-bold text-[#FF9900] mb-2">Networking</div>
             <p className="metric-label">Meet speakers, founders, and recruiters while working on‑ground.</p>
           </div>
-          <div className="bg-black border-2 border-[#585858] rounded-xl p-6 hover:border-[#ff6501] transition-all duration-500">
-            <div className="text-xl md:text-2xl font-bold text-[#ff6501] mb-2">Certificate</div>
+          <div className="bg-black border-2 border-[#585858] rounded-xl p-6 hover:border-[#FF9900] transition-all duration-500">
+            <div className="text-xl md:text-2xl font-bold text-[#FF9900] mb-2">Certificate</div>
             <p className="metric-label">Receive an official certificate and recommendation for your contribution.</p>
           </div>
         </div>
 
         <div className="text-center">
           <a href="/contact/student-volunteer">
-            <button className="bg-transparent border-2 border-[#ff6501] text-[#ff6501] font-semibold px-6 py-3 rounded-lg shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:bg-[#ff6501]/10 hover:shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300">Apply as Student / Volunteer</button>
+            <button className="bg-transparent border-2 border-[#FF9900] text-[#FF9900] font-semibold px-6 py-3 rounded-lg shadow-[0_0_10px_rgba(255,153,0,0.3)] hover:bg-[#FF9900]/10 hover:shadow-[0_0_20px_rgba(255,153,0,0.6)] transition-all duration-300">Apply as Student / Volunteer</button>
           </a>
         </div>
 
@@ -62,7 +62,7 @@ const StudentVolunteerInfo = () => {
         <div className="mt-8 text-center">
           <p className="metric-label">
             Prefer email? Reach us at {" "}
-            <a href="mailto:satoshi@btcindia.media" className="text-[#ff6501] hover:underline">team@btcindia.media</a>.
+            <a href="mailto:satoshi@btcindia.media" className="text-[#FF9900] hover:underline">team@btcindia.media</a>.
           </p>
         </div>
       </div>
@@ -71,5 +71,9 @@ const StudentVolunteerInfo = () => {
 };
 
 export default StudentVolunteerInfo;
+
+
+
+
 
 

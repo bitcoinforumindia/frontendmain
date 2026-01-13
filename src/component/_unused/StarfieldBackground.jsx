@@ -46,9 +46,9 @@ const StarfieldBackground = () => {
 
         // Add subtle glow effect - Orange
         ctx.shadowBlur = 4;
-        ctx.shadowColor = `rgba(255, 101, 1, ${star.opacity})`;
+        ctx.shadowColor = `rgba(0, 102, 255, ${star.opacity})`;
 
-        ctx.fillStyle = `rgba(255, 101, 1, ${star.opacity})`; // #ff6501 in rgba
+        ctx.fillStyle = `rgba(0, 102, 255, ${star.opacity})`; // Blue in rgba
         ctx.fill();
 
         // Reset shadow for next draw
@@ -83,3 +83,7 @@ const StarfieldBackground = () => {
 };
 
 export default StarfieldBackground;
+
+
+
+

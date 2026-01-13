@@ -83,11 +83,11 @@ const ContactMediaPartnership = () => {
   return (
     <section className="min-h-[70vh] w-full flex items-start justify-center px-4 sm:px-8 lg:px-20 pt-36 pb-20 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[300px] h-[150px] bg-[#ff6501]/10 blur-[90px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#FF9900]/20 blur-[80px] rounded-full pointer-events-none"></div>
 
-      <div className="max-w-2xl w-full bg-black border-2 border-[#585858] rounded-2xl p-6 sm:p-8 text-white hover:border-[#ff6501] transition-all duration-500 relative z-10">
+      <div className="max-w-2xl w-full bg-black border-2 border-[#585858] rounded-2xl p-6 sm:p-8 text-white hover:border-[#FF9900] transition-all duration-500 relative z-10">
         <div className="mb-8 p-4 relative z-10">
-          <Link to="/contact" className="inline-flex items-center text-[#ff6501] hover:text-[#ff6501] transition-colors mb-6 group">
+          <Link to="/contact" className="inline-flex items-center text-[#FF9900] hover:text-[#FF9900] transition-colors mb-6 group">
             <svg className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
@@ -96,13 +96,13 @@ const ContactMediaPartnership = () => {
 
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 tracking-tighter uppercase">
-              Media & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6501] to-[#ff6501]">Partnerships</span>
+              Media & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF9900] to-[#FF9900]">Partnerships</span>
             </h1>
 
-            <div className="flex items-center justify-center gap-4 text-[#ff6501]/80 mb-4">
-              <div className="h-[1px] w-8 bg-[#ff6501]"></div>
+            <div className="flex items-center justify-center gap-4 text-[#FF9900]/80 mb-4">
+              <div className="h-[1px] w-8 bg-[#FF9900]"></div>
               <span className="text-xs font-mono tracking-[0.3em] uppercase">Collaborate</span>
-              <div className="h-[1px] w-8 bg-[#ff6501]"></div>
+              <div className="h-[1px] w-8 bg-[#FF9900]"></div>
             </div>
 
             <p className="text-gray-400 text-base md:text-lg font-light">
@@ -188,7 +188,7 @@ const ContactMediaPartnership = () => {
             {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message}</p>}
           </div>
 
-          <Button type="submit" label={loading ? 'Submitting...' : 'Submit'} className="w-full py-3 text-lg !bg-none !bg-transparent !border-2 !border-[#ff6501] !text-[#ff6501] shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:!bg-[#ff6501]/10 hover:!shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300" disabled={loading} />
+          <Button type="submit" label={loading ? 'Submitting...' : 'Submit'} className="w-full py-3 text-lg !bg-none !bg-transparent !border-2 !border-[#FF9900] !text-[#FF9900] shadow-[0_0_10px_rgba(255,153,0,0.3)] hover:!bg-[#FF9900]/10 hover:!shadow-[0_0_20px_rgba(255,153,0,0.6)] transition-all duration-300" disabled={loading} />
 
           {status === 'validation' && <p className="text-yellow-400">⚠️ Please fill in all required fields.</p>}
           {status === 'ok' && <p className="text-green-400">✅ Thank you for contacting us. We will reach out to you as soon as possible.</p>}
@@ -200,5 +200,9 @@ const ContactMediaPartnership = () => {
 };
 
 export default ContactMediaPartnership;
+
+
+
+
 
 

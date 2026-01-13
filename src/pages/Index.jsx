@@ -34,16 +34,16 @@ const Index = () => {
       <LiveRegistrationCounter />
       <TicketTiersSection />
       <Speakers />
-      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#ff6501]/30 to-transparent"></div>
+      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#FF9900]/30 to-transparent"></div>
       <WhyAttend />
       {/* Separation Line */}
-      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#ff6501]/30 to-transparent"></div>
+      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#FF9900]/30 to-transparent"></div>
       <IndianStatesSection />
       {/* Separation Line */}
-      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#ff6501]/30 to-transparent"></div>
+      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#FF9900]/30 to-transparent"></div>
       <SponsorsSection />
       {/* Separation Line */}
-      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#ff6501]/30 to-transparent"></div>
+      <div className="w-full max-w-4xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#FF9900]/30 to-transparent"></div>
       <FAQSection />
       <Footer />
     </div>
@@ -51,3 +51,7 @@ const Index = () => {
 };
 
 export default Index;
+
+
+
+

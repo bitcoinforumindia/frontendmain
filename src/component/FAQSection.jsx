@@ -32,16 +32,16 @@ const FAQSection = () => {
       <FadeIn direction="up" duration={800}>
         <div className="text-center mb-16 relative">
           {/* Background decoration */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#ff6501]/20 blur-[80px] rounded-full pointer-events-none"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#FF9900]/20 blur-[80px] rounded-full pointer-events-none"></div>
 
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tighter uppercase relative z-10">
-            Frequently <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6501] to-[#F69415]">Asked</span> Questions
+            Frequently <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF9900] to-[#F69415]">Asked</span> Questions
           </h2>
 
-          <div className="flex items-center justify-center gap-4 text-[#ff6501]/80 mb-4">
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+          <div className="flex items-center justify-center gap-4 text-[#FF9900]/80 mb-4">
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
             <span className="text-sm font-mono tracking-[0.3em] uppercase">Knowledge Base</span>
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
           </div>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
@@ -57,8 +57,8 @@ const FAQSection = () => {
               className={`
                 group rounded-2xl border transition-all duration-300 overflow-hidden
                 ${openIndex === index
-                  ? 'bg-[#ff6501]/15 border-[#ff6501]/50 shadow-[0_0_30px_rgba(255,101,1,0.1)]'
-                  : 'bg-[#ff6501]/10 border-white/10 hover:bg-[#ff6501]/15 hover:border-[#ff6501]/30'
+                  ? 'bg-[#FF9900]/15 border-[#FF9900]/50 shadow-[0_0_30px_rgba(255,153,0,0.1)]'
+                  : 'bg-[#FF9900]/10 border-white/10 hover:bg-[#FF9900]/15 hover:border-[#FF9900]/30'
                 }
               `}
             >
@@ -66,12 +66,12 @@ const FAQSection = () => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-8 py-6 flex justify-between items-center text-left focus:outline-none"
               >
-                <span className={`text-lg md:text-xl font-semibold transition-colors duration-300 ${openIndex === index ? 'text-[#ff6501]' : 'text-white group-hover:text-[#ff6501]'}`}>
+                <span className={`text-lg md:text-xl font-semibold transition-colors duration-300 ${openIndex === index ? 'text-[#FF9900]' : 'text-white group-hover:text-[#FF9900]'}`}>
                   {faq.question}
                 </span>
                 <div className={`
                    w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300
-                   ${openIndex === index ? 'border-[#ff6501] bg-[#ff6501] text-black rotate-180' : 'border-white/20 text-white group-hover:border-[#ff6501]'}
+                   ${openIndex === index ? 'border-[#FF9900] bg-[#FF9900] text-black rotate-180' : 'border-white/20 text-white group-hover:border-[#FF9900]'}
                 `}>
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -82,7 +82,7 @@ const FAQSection = () => {
                 className={`transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
               >
-                <div className="px-8 pb-6 text-gray-300 text-base md:text-lg leading-relaxed border-t border-[#ff6501]/30 pt-4 mt-2">
+                <div className="px-8 pb-6 text-gray-300 text-base md:text-lg leading-relaxed border-t border-[#FF9900]/30 pt-4 mt-2">
                   {faq.answer}
                 </div>
               </div>
@@ -95,3 +95,7 @@ const FAQSection = () => {
 };
 
 export default FAQSection;
+
+
+
+

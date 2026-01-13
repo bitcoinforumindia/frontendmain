@@ -81,11 +81,11 @@ const Navigation = () => {
       <div className={`fixed top-6 z-50 transition-all duration-500 ease-out right-4 left-auto translate-x-0 md:left-1/2 md:right-auto md:-translate-x-1/2 ${isScrolled ? 'w-auto md:w-[85%] lg:w-[75%]' : 'w-auto md:w-[90%] lg:w-[85%]'}`}>
         {/* Main Header Pill - Contains Logo, Nav, and Button */}
         <header
-          className={`transition-all duration-500 ease-out border border-[#ff6501]/50
+          className={`transition-all duration-500 ease-out 
             ${isScrolled
-              ? 'py-2 md:py-3 bg-[#0A0A0A]/80 shadow-[0_4px_30px_rgba(255,101,1,0.1)] backdrop-blur-2xl'
-              : 'py-3 md:py-5 bg-[#0A0A0A]/60 backdrop-blur-md'
-            } rounded-2xl w-full mx-auto`}
+              ? 'md:py-3 md:bg-[#0A0A0A]/80 md:shadow-[0_4px_30px_rgba(255,153,0,0.1)] md:backdrop-blur-2xl md:border md:border-[#FF9900]/50'
+              : 'md:py-5 md:bg-[#0A0A0A]/60 md:backdrop-blur-md md:border md:border-[#FF9900]/50'
+            } md:rounded-2xl w-full mx-auto`}
         >
           <div className="px-4 md:px-10 flex items-center justify-between gap-4 relative z-10 w-full">
             {/* Logo - Left (visible only on Desktop now) */}
@@ -104,7 +104,7 @@ const Navigation = () => {
               <Button
                 label="Get Tickets"
                 variant="primary"
-                className={`!rounded-xl transition-all duration-300 ${isScrolled ? 'px-6 py-2 text-sm' : 'px-8 py-3 text-base'} shadow-lg shadow-[#ff6501]/20`}
+                className={`!rounded-xl transition-all duration-300 ${isScrolled ? 'px-6 py-2 text-sm' : 'px-8 py-3 text-base'} shadow-lg shadow-[#FF9900]/20`}
                 onClick={handleWinFreeTickets}
               />
             </div>
@@ -122,7 +122,7 @@ const Navigation = () => {
 
 // Helper for nav links with hover effect
 const NavLink = ({ children, to, href, onClick, isScrolled }) => {
-  const baseClasses = `relative ${isScrolled ? 'px-3 py-2 text-base' : 'px-4 py-3 text-lg'} font-medium text-white/90 hover:text-[#ff6501] transition-all duration-300`;
+  const baseClasses = `relative ${isScrolled ? 'px-3 py-2 text-base' : 'px-4 py-3 text-lg'} font-medium text-white/90 hover:text-[#FF9900] transition-all duration-300`;
 
   if (to) {
     return <Link to={to} className={baseClasses}>{children}</Link>;
@@ -135,15 +135,15 @@ const Hamburger = ({ goToId, handleWinFreeTickets }) => {
 
   return (
     <div className="relative">
-      <button onClick={() => setOpen(!open)} className="p-2 text-white hover:text-[#ff6501] transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
+      <button onClick={() => setOpen(!open)} className="p-2 text-white hover:text-[#FF9900] transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-9 h-9">
           <path strokeLinecap="round" strokeLinejoin="round" d={open ? "M6 18L18 6M6 6l12 12" : "M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"} />
         </svg>
       </button>
 
       {/* Floating Dropdown for Mobile */}
       {open && (
-        <div className="absolute top-12 right-0 w-56 bg-[#0A0A0A]/95 border border-[#ff6501]/30 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-4 duration-200 backdrop-blur-xl">
+        <div className="absolute top-12 right-0 w-56 bg-[#0A0A0A]/95 border border-[#FF9900]/30 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-4 duration-200 backdrop-blur-xl">
           <div className="flex flex-col p-2 gap-1">
             {/* Get Tickets Button */}
             <button
@@ -151,25 +151,25 @@ const Hamburger = ({ goToId, handleWinFreeTickets }) => {
                 handleWinFreeTickets();
                 setOpen(false);
               }}
-              className="w-full px-4 py-3 bg-[#ff6501] text-black font-bold rounded-xl hover:bg-[#e65a00] transition-colors"
+              className="w-full px-4 py-3 bg-[#FF9900] text-black font-bold rounded-xl hover:bg-[#e65a00] transition-colors"
             >
               Get Tickets
             </button>
 
             {/* Menu Items */}
-            <button onClick={() => { goToId('speakers'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#ff6501] hover:bg-white/5 rounded-lg transition-colors">
+            <button onClick={() => { goToId('speakers'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#FF9900] hover:bg-white/5 rounded-lg transition-colors">
               Speakers
             </button>
-            <button onClick={() => { goToId('sponsors'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#ff6501] hover:bg-white/5 rounded-lg transition-colors">
+            <button onClick={() => { goToId('sponsors'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#FF9900] hover:bg-white/5 rounded-lg transition-colors">
               Sponsors
             </button>
-            <button onClick={() => { goToId('partnerships'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#ff6501] hover:bg-white/5 rounded-lg transition-colors">
+            <button onClick={() => { goToId('partnerships'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#FF9900] hover:bg-white/5 rounded-lg transition-colors">
               Partnerships
             </button>
-            <button onClick={() => { goToId('volunteer'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#ff6501] hover:bg-white/5 rounded-lg transition-colors">
+            <button onClick={() => { goToId('volunteer'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#FF9900] hover:bg-white/5 rounded-lg transition-colors">
               Volunteer
             </button>
-            <button onClick={() => { goToId('contact'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#ff6501] hover:bg-white/5 rounded-lg transition-colors">
+            <button onClick={() => { goToId('contact'); setOpen(false); }} className="w-full px-4 py-2.5 text-left text-gray-300 hover:text-[#FF9900] hover:bg-white/5 rounded-lg transition-colors">
               Contact Us
             </button>
           </div>
@@ -180,9 +180,13 @@ const Hamburger = ({ goToId, handleWinFreeTickets }) => {
 };
 
 const MobileLink = ({ children, to, href, onClick }) => {
-  const classes = "block px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-[#ff6501] rounded-xl transition-all text-center";
+  const classes = "block px-4 py-3 text-sm text-gray-300 hover:bg-white/5 hover:text-[#FF9900] rounded-xl transition-all text-center";
   if (to) return <Link to={to} onClick={onClick} className={classes}>{children}</Link>;
   return <a href={href} onClick={onClick} className={classes}>{children}</a>;
 };
 
 export default Navigation;
+
+
+
+

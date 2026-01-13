@@ -109,3 +109,7 @@ export const useStaggeredScrollAnimation = (itemCount, options = {}) => {
 
   return { containerRef, getItemProps };
 };
+
+
+
+

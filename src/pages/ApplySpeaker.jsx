@@ -169,7 +169,7 @@ const ApplySpeaker = () => {
         <div className="mb-8">
           <Link
             to="/"
-            className="inline-flex items-center text-[#ff6501] hover:text-[#ff6501] transition-colors group"
+            className="inline-flex items-center text-[#FF9900] hover:text-[#FF9900] transition-colors group"
           >
             <svg className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -180,16 +180,16 @@ const ApplySpeaker = () => {
 
         <div className="text-center mb-16 relative">
           {/* Background decoration */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#ff6501]/20 blur-[80px] rounded-full pointer-events-none"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[100px] bg-[#FF9900]/20 blur-[80px] rounded-full pointer-events-none"></div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tighter uppercase relative z-10">
-            Apply to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6501] to-[#ff6501]">Speak</span>
+            Apply to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF9900] to-[#FF9900]">Speak</span>
           </h1>
 
-          <div className="flex items-center justify-center gap-4 text-[#ff6501]/80 mb-4">
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+          <div className="flex items-center justify-center gap-4 text-[#FF9900]/80 mb-4">
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
             <span className="text-sm font-mono tracking-[0.3em] uppercase">Share Your Voice</span>
-            <div className="h-[1px] w-12 bg-[#ff6501]"></div>
+            <div className="h-[1px] w-12 bg-[#FF9900]"></div>
           </div>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
@@ -198,11 +198,11 @@ const ApplySpeaker = () => {
           </p>
         </div>
 
-        <div className="bg-black border-2 border-[#585858] rounded-2xl p-6 sm:p-8 hover:border-[#ff6501] transition-all duration-500">
+        <div className="bg-black border-2 border-[#585858] rounded-2xl p-6 sm:p-8 hover:border-[#FF9900] transition-all duration-500">
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Personal Information */}
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#ff6501] mb-4">Personal Information</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#FF9900] mb-4">Personal Information</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-inter-semiBold text-white mb-2">
@@ -214,7 +214,7 @@ const ApplySpeaker = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent ${errors.name ? 'border-red-500' : 'border-[#585858]'
+                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent ${errors.name ? 'border-red-500' : 'border-[#585858]'
                       }`}
                     placeholder="Enter your full name"
                   />
@@ -231,7 +231,7 @@ const ApplySpeaker = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent ${errors.email ? 'border-red-500' : 'border-[#585858]'
+                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent ${errors.email ? 'border-red-500' : 'border-[#585858]'
                       }`}
                     placeholder="Enter your email address"
                   />
@@ -248,7 +248,7 @@ const ApplySpeaker = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent ${errors.phone ? 'border-red-500' : 'border-[#585858]'
+                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent ${errors.phone ? 'border-red-500' : 'border-[#585858]'
                       }`}
                     placeholder="Enter your phone number"
                   />
@@ -265,7 +265,7 @@ const ApplySpeaker = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent"
+                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent"
                     placeholder="Your current company or organization"
                   />
                 </div>
@@ -280,7 +280,7 @@ const ApplySpeaker = () => {
                     name="jobTitle"
                     value={formData.jobTitle}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent"
+                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent"
                     placeholder="Your current job title"
                   />
                 </div>
@@ -289,7 +289,7 @@ const ApplySpeaker = () => {
 
             {/* Speaker Profile */}
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#ff6501] mb-4">Speaker Profile</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#FF9900] mb-4">Speaker Profile</h2>
               <div>
                 <label htmlFor="bio" className="block text-sm font-inter-semiBold text-white mb-2">
                   Speaker Profile *
@@ -300,7 +300,7 @@ const ApplySpeaker = () => {
                   value={formData.bio}
                   onChange={handleInputChange}
                   rows={4}
-                  className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent resize-vertical ${errors.bio ? 'border-red-500' : 'border-[#585858]'
+                  className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent resize-vertical ${errors.bio ? 'border-red-500' : 'border-[#585858]'
                     }`}
                   placeholder="Tell us about your background, expertise, and achievements..."
                 />
@@ -310,7 +310,7 @@ const ApplySpeaker = () => {
 
             {/* Speaking Topic */}
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#ff6501] mb-4">Speaking Topic</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#FF9900] mb-4">Speaking Topic</h2>
               <div className="space-y-6">
                 <div>
                   <label htmlFor="topicTitle" className="block text-sm font-inter-semiBold text-white mb-2">
@@ -322,7 +322,7 @@ const ApplySpeaker = () => {
                     name="topicTitle"
                     value={formData.topicTitle}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent ${errors.topicTitle ? 'border-red-500' : 'border-[#585858]'
+                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent ${errors.topicTitle ? 'border-red-500' : 'border-[#585858]'
                       }`}
                     placeholder="What is the title of your proposed talk?"
                   />
@@ -339,7 +339,7 @@ const ApplySpeaker = () => {
                     value={formData.topicAbstract}
                     onChange={handleInputChange}
                     rows={6}
-                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent resize-vertical ${errors.topicAbstract ? 'border-red-500' : 'border-[#585858]'
+                    className={`w-full px-4 py-3 bg-[#2a2a2a] border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent resize-vertical ${errors.topicAbstract ? 'border-red-500' : 'border-[#585858]'
                       }`}
                     placeholder="Provide a detailed description of your talk, key points, and what attendees will learn..."
                   />
@@ -350,7 +350,7 @@ const ApplySpeaker = () => {
 
             {/* Social Links */}
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#ff6501] mb-4">Social Links</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#FF9900] mb-4">Social Links</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
                   <label htmlFor="linkedin" className="block text-sm font-inter-semiBold text-white mb-2">
@@ -363,7 +363,7 @@ const ApplySpeaker = () => {
                     name="linkedin"
                     value={formData.linkedin}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent"
+                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent"
                     placeholder="https://linkedin.com/in/username"
                   />
                 </div>
@@ -378,7 +378,7 @@ const ApplySpeaker = () => {
                     name="telegram"
                     value={formData.telegram}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent"
+                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent"
                     placeholder="@username"
                   />
                 </div>
@@ -394,7 +394,7 @@ const ApplySpeaker = () => {
                     name="website"
                     value={formData.website}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ff6501] focus:border-transparent"
+                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#585858] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FF9900] focus:border-transparent"
                     placeholder="https://yourwebsite.com"
                   />
                 </div>
@@ -429,7 +429,7 @@ const ApplySpeaker = () => {
               <Button
                 type="submit"
                 label={isSubmitting ? "Submitting Application..." : "Submit Application"}
-                className="w-full py-4 text-lg font-semibold !bg-none !bg-transparent !border-2 !border-[#ff6501] !text-[#ff6501] shadow-[0_0_10px_rgba(255,101,1,0.3)] hover:!bg-[#ff6501]/10 hover:!shadow-[0_0_20px_rgba(255,101,1,0.6)] transition-all duration-300"
+                className="w-full py-4 text-lg font-semibold !bg-none !bg-transparent !border-2 !border-[#FF9900] !text-[#FF9900] shadow-[0_0_10px_rgba(255,153,0,0.3)] hover:!bg-[#FF9900]/10 hover:!shadow-[0_0_20px_rgba(255,153,0,0.6)] transition-all duration-300"
                 disabled={isSubmitting}
               />
             </div>
@@ -440,7 +440,7 @@ const ApplySpeaker = () => {
               Questions? Contact us at{" "}
               <a
                 href="mailto:speakers@btcindia.media"
-                className="text-[#ff6501] hover:underline"
+                className="text-[#FF9900] hover:underline"
               >
                 speakers@btcindia.media
               </a>
@@ -453,3 +453,7 @@ const ApplySpeaker = () => {
 };
 
 export default ApplySpeaker;
+
+
+
+

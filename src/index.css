@@ -47,9 +47,9 @@ h6,
 /* Premium Buttons */
 .btn-primary {
   @apply relative overflow-hidden px-8 py-4 rounded-xl font-bold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg;
-  background: linear-gradient(135deg, #ff6501 0%, #ff6501 100%);
+  background: linear-gradient(135deg, #FF9900 0%, #FF9900 100%);
   color: #000;
-  box-shadow: 0 4px 15px rgba(255, 101, 1, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
 }
 
 .btn-primary::after {
@@ -69,7 +69,7 @@ h6,
 }
 
 .btn-secondary {
-  @apply border border-[#333] px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:border-[#ff6501] hover:text-[#ff6501] bg-transparent text-[#ffffff];
+  @apply border border-[#333] px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:border-[#FF9900] hover:text-[#FF9900] bg-transparent text-[#ffffff];
 }
 
 /* Prevent disabled buttons from being faded out */
@@ -96,14 +96,14 @@ button[disabled] {
 }
 
 .premium-card:hover {
-  border-color: #ff6501;
+  border-color: #FF9900;
   transform: translateY(-5px);
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
 }
 
 /* Text Effects */
 .gradient-text-gold {
-  background: linear-gradient(135deg, #ff6501 0%, #ff6501 50%, #ff6501 100%);
+  background: linear-gradient(135deg, #FF9900 0%, #FF9900 50%, #FF9900 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -189,7 +189,7 @@ button[disabled] {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff6501;
+  background: #FF9900;
 }
 
 .fade-in-up {
@@ -263,12 +263,12 @@ button[disabled] {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #ff6501;
+  background: #FF9900;
   border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #e65a00;
+  background: #CC7A00;
 }
 
 /* Ripple Effect Animation */
@@ -289,3 +289,6 @@ button[disabled] {
 .animate-cell-ripple {
   animation: cell-ripple var(--duration, 200ms) ease-out none 1 var(--delay, 0ms);
 }
+
+
+
