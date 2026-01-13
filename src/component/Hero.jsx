@@ -47,13 +47,23 @@ const Hero = () => {
 
     return (
 
-        <section className="relative w-full min-h-[65vh] lg:min-h-[85vh] flex flex-col justify-end px-4 sm:px-8 lg:px-24 overflow-hidden pt-44 lg:pt-48 pb-12 lg:pb-24">
+        <section className="relative w-full min-h-[65vh] lg:min-h-[85vh] flex flex-col justify-end px-4 sm:px-8 lg:px-24 overflow-hidden pt-32 lg:pt-48 pb-12 lg:pb-24">
 
             <div className="z-10 w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-16">
                 {/* Content Section - Left Side */}
                 <div className="flex flex-col items-center lg:items-start w-full lg:w-[60%] relative z-20">
                     <FadeIn direction="up" delay={400} duration={800} className="w-full">
-                        <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black mb-8 lg:mb-6 leading-[0.9] tracking-tighter text-center lg:text-left font-heading text-white">
+                        {/* Logo Image - Mobile Only */}
+                        <div className="lg:hidden flex justify-center mb-8">
+                            <img
+                                src="/assets/imgs/logo/logo.svg"
+                                alt="Bitcoin India Forum"
+                                className="h-52 w-auto drop-shadow-[0_0_30px_rgba(255,153,0,0.4)]"
+                            />
+                        </div>
+
+                        {/* Original Text - Desktop Only */}
+                        <h1 className="hidden lg:block text-4xl sm:text-6xl lg:text-8xl font-black mb-8 lg:mb-6 leading-[0.9] tracking-tighter text-center lg:text-left font-heading text-white">
                             INDIA'S PREMIER <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF9900] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(255,153,0,0.3)]">
                                 BITCOIN
