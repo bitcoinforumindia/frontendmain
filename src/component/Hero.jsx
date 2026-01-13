@@ -53,7 +53,7 @@ const Hero = () => {
                 {/* Content Section - Left Side */}
                 <div className="flex flex-col items-center lg:items-start w-full lg:w-[60%] relative z-20">
                     <FadeIn direction="up" delay={400} duration={800} className="w-full">
-                        <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black mb-6 leading-[0.9] tracking-tighter text-center lg:text-left font-heading text-white">
+                        <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black mb-8 lg:mb-6 leading-[0.9] tracking-tighter text-center lg:text-left font-heading text-white">
                             INDIA'S PREMIER <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF9900] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(255,153,0,0.3)]">
                                 BITCOIN
@@ -65,8 +65,8 @@ const Hero = () => {
                     </FadeIn>
 
                     {/* Mobile-Only Enhanced Description */}
-                    <FadeIn direction="up" delay={500} duration={800} className="lg:hidden w-full mt-8 space-y-4">
-                        <div className="grid grid-cols-2 gap-3 max-w-xl mx-auto">
+                    <FadeIn direction="up" delay={500} duration={800} className="lg:hidden w-full mt-10 space-y-6">
+                        <div className="grid grid-cols-2 gap-4 max-w-xl mx-auto">
                             <div ref={attendeesRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#FF9900]/10">
                                 <div className="text-2xl font-bold text-[#FF9900] mb-1">{attendeesCount}</div>
                                 <div className="text-gray-300 text-sm uppercase tracking-wide">Expected Attendees</div>
@@ -89,7 +89,7 @@ const Hero = () => {
                         </p>
                     </FadeIn>
 
-                    <FadeIn direction="up" delay={600} duration={800} className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mt-8 lg:mt-10">
+                    <FadeIn direction="up" delay={600} duration={800} className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10 lg:mt-10">
                         <Button
                             label="Get Tickets"
                             variant="primary"
