@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import Button from "./Button";
 import FadeIn from "./ui/FadeIn";
 import { useCountUpOnScroll } from '../hooks/useCountUp';
@@ -58,49 +58,52 @@ const Hero = () => {
                             <img
                                 src="/assets/imgs/logo/logo.svg"
                                 alt="Bitcoin India Forum"
-                                className="h-64 w-auto drop-shadow-[0_0_30px_rgba(230,138,0,0.4)]"
+                                className="h-64 w-auto drop-shadow-[0_0_30px_rgba(255,101,1,0.4)]"
                             />
                         </div>
 
                         {/* Original Text - Desktop Only */}
                         <h1 className="hidden lg:block text-4xl sm:text-6xl lg:text-8xl font-black mb-8 lg:mb-6 leading-[0.9] tracking-tighter text-center lg:text-left font-heading text-white">
                             Where <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E68A00] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(230,138,0,0.3)]">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6501] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(255,101,1,0.3)]">
                                 INDIA
                             </span> <br />
                             meets <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E68A00] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(230,138,0,0.3)]">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6501] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(255,101,1,0.3)]">
                                 BITCOIN
                             </span>
                         </h1>
 
-                        {/* Tagline - Mobile Only on Desktop View */}
-                        <p className="lg:hidden text-white text-xl sm:text-2xl lg:text-3xl font-medium mb-6 lg:mb-8 text-center lg:text-left tracking-wide">
-                            Where <span className="text-[#E68A00] font-bold">INDIA</span> meets <span className="text-[#E68A00] font-bold">BITCOIN</span>
-                        </p>
 
-                        <p className="text-gray-300 text-lg sm:text-xl lg:text-2xl font-light leading-relaxed text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-                            Here in Hyderabad. Join <span className="text-[#E68A00] font-bold">50,000+</span> attendees, <span className="text-[#E68A00] font-bold">150+</span> speakers, and industry leaders for a historic event.
+                        {/* Tagline - Responsive */}
+                        <p className="hidden lg:block text-gray-300 text-lg sm:text-xl lg:text-2xl font-light leading-relaxed text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+                            Join <span className="text-[#FF6501] font-bold">50,000+</span> attendees & <span className="text-[#FF6501] font-bold">150+</span> speakers in <span className="text-[#FF6501] font-bold">Hyderabad</span> for India's historic Bitcoin gathering.
+                        </p>
+                        <p className="lg:hidden text-gray-300 text-lg sm:text-xl font-light leading-relaxed text-center max-w-2xl mx-auto lg:mx-0">
+                            <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF6501] to-[#FFC04D] drop-shadow-[0_0_15px_rgba(255,101,1,0.2)]">
+                                Where INDIA meets BITCOIN.
+                            </span><br />
+                            The historic gathering of the global community in Hyderabad.
                         </p>
                     </FadeIn>
 
                     {/* Mobile-Only Enhanced Description */}
                     <FadeIn direction="up" delay={500} duration={800} className="lg:hidden w-full mt-10 space-y-6">
                         <div className="grid grid-cols-2 gap-4 max-w-xl mx-auto">
-                            <div ref={attendeesRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#E68A00]/10">
-                                <div className="text-2xl font-bold text-[#E68A00] mb-1">{attendeesCount}</div>
+                            <div ref={attendeesRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#FF6501]/10">
+                                <div className="text-2xl font-bold text-[#FF6501] mb-1">{attendeesCount}</div>
                                 <div className="text-gray-300 text-sm uppercase tracking-wide">Expected Attendees</div>
                             </div>
-                            <div ref={speakersRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#E68A00]/10">
-                                <div className="text-2xl font-bold text-[#E68A00] mb-1">{speakersCount}</div>
+                            <div ref={speakersRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#FF6501]/10">
+                                <div className="text-2xl font-bold text-[#FF6501] mb-1">{speakersCount}</div>
                                 <div className="text-gray-300 text-sm uppercase tracking-wide">Global Speakers</div>
                             </div>
-                            <div ref={sponsorsRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#E68A00]/10">
-                                <div className="text-2xl font-bold text-[#E68A00] mb-1">{sponsorsCount}</div>
+                            <div ref={sponsorsRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#FF6501]/10">
+                                <div className="text-2xl font-bold text-[#FF6501] mb-1">{sponsorsCount}</div>
                                 <div className="text-gray-300 text-sm uppercase tracking-wide">Industry Sponsors</div>
                             </div>
-                            <div ref={daysRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#E68A00]/10">
-                                <div className="text-2xl font-bold text-[#E68A00] mb-1">{daysCount}</div>
+                            <div ref={daysRef} className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-[#FF6501]/10">
+                                <div className="text-2xl font-bold text-[#FF6501] mb-1">{daysCount}</div>
                                 <div className="text-gray-300 text-sm uppercase tracking-wide">Days of Networking</div>
                             </div>
                         </div>
@@ -113,14 +116,14 @@ const Hero = () => {
                         <Button
                             label="Get Tickets"
                             variant="primary"
-                            className="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-bold shadow-[0_0_20px_rgba(230,138,0,0.4)] hover:shadow-[0_0_30px_rgba(230,138,0,0.6)] transition-all duration-300 transform hover:-translate-y-1"
+                            className="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-bold transition-all duration-300 transform hover:-translate-y-1"
                             onClick={handleWinFreeTickets}
                         />
                         <a href="/#sponsors-cta">
                             <Button
                                 label="Become a Sponsor"
                                 variant="secondary"
-                                className="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-bold border-2 border-[#E68A00] text-[#E68A00] hover:bg-[#E68A00] hover:text-black transition-all duration-300"
+                                className="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-lg font-bold transition-all duration-300 !border-white hover:!border-[#FF6501]"
                             />
                         </a>
                     </FadeIn>
@@ -140,7 +143,7 @@ const Hero = () => {
                         <img
                             src="/assets/imgs/logo/logo.svg"
                             alt="Bitcoin India Forum"
-                            className="w-full h-auto drop-shadow-[0_0_60px_rgba(230,138,0,0.5)] animate-float-fast pointer-events-none"
+                            className="w-full h-auto drop-shadow-[0_0_60px_rgba(255,101,1,0.5)] animate-float-fast pointer-events-none"
                         />
                     </div>
                 </FadeIn>
@@ -151,6 +154,8 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
 
 
 
