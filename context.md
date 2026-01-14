@@ -44,6 +44,8 @@ A high-performance, visually stunning landing page for the "Bitcoin India" confe
 - **Hero Tagline Update (Mobile View)**:
     - Replaced the stat-heavy tagline in the mobile hero section with: "Where **INDIA** meets **BITCOIN**. The historic gathering of the global community in Hyderabad."
     - **Highlighting**: Applied a richer, darker orange gradient (`#FF6501` to `#CC5200`) and extrabold weighting to the "Where INDIA meets BITCOIN" part for better brand alignment and visual impact.
+- **Hero Title Update (Desktop View)**:
+    - Capitalized "meets" to "**Meets**" in the primary desktop heading for improved typography.
     - Kept the original stat-inclusive tagline for desktop views to maintain layout consistency.
     - Reason: Avoid redundancy with the stats grid (50k+ attendees, 150+ speakers) that appears directly below the tagline on mobile.
 - **Hero Section Refinement & UI Color Update**: (Jan 14 2026)

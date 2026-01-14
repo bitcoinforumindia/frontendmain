@@ -68,7 +68,7 @@ const Hero = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6501] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(255,101,1,0.3)]">
                                 INDIA
                             </span> <br />
-                            meets <br />
+                            Meets <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6501] to-[#FFC04D] drop-shadow-[0_0_20px_rgba(255,101,1,0.3)]">
                                 BITCOIN
                             </span>
