@@ -80,7 +80,7 @@ const Hero = () => {
                             Join <span className="text-[#FF6501] font-bold">50,000+</span> attendees & <span className="text-[#FF6501] font-bold">150+</span> speakers in <span className="text-[#FF6501] font-bold">Hyderabad</span> for India's historic Bitcoin gathering.
                         </p>
                         <p className="lg:hidden text-gray-300 text-lg sm:text-xl font-light leading-relaxed text-center max-w-2xl mx-auto lg:mx-0">
-                            <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF6501] to-[#FFC04D] drop-shadow-[0_0_15px_rgba(255,101,1,0.2)]">
+                            <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF6501] to-[#CC5200] drop-shadow-[0_0_15px_rgba(255,101,1,0.3)]">
                                 Where INDIA meets BITCOIN.
                             </span><br />
                             The historic gathering of the global community in Hyderabad.
